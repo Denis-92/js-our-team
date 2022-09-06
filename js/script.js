@@ -19,7 +19,8 @@ Ragioniamo come sempre a step.
 Prima la logica in italiano e poi traduciamo in codice.
 */
 
-// creare un array di oggetti per rappresentare i membri del team.
+// MILESTONE 0:
+// Creare l’array di oggetti con le informazioni fornite.
 const teamMembers = [
 
     barnett = {
@@ -60,6 +61,12 @@ const teamMembers = [
 
 ];
 
+// MILESTONE 1:
+// Stampare su console le informazioni di nome, ruolo e la stringa della foto
 for (let i = 0; i < teamMembers.length; i++) {
-    console.log(teamMembers[i]);
+    console.log('Team member:');
+    console.log(teamMembers[i]['nome']);
+    console.log(teamMembers[i]['ruolo']);
+    console.log(teamMembers[i]['foto']);
+    console.log(' ');
 }
