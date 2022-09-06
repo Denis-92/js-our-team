@@ -21,27 +21,46 @@ Prima la logica in italiano e poi traduciamo in codice.
 
 // creare un array di oggetti per rappresentare i membri del team.
 const teamMembers = [
-    pippo = {
-        nome: 'pippo',
-        ruolo: 'ceo',
-        foto: 'metti foto'
+
+    barnett = {
+        nome: 'Wayne Barnett',
+        ruolo: 'Founder & CEO',
+        foto: 'wayne-barnett-founder-ceo.jpg'
     },
 
-    pluto = {
-        nome: 'pluto',
-        ruolo: 'social media manager',
-        foto: 'metti foto'
+    caroll = {
+        nome: 'Angela Caroll',
+        ruolo: 'Chief Editor',
+        foto: 'angela-caroll-chief-editor.jpg'
     },
 
-    paperino = {
-        nome: 'paperino',
-        ruolo: 'chief editor',
-        foto: 'metti foto'
+    gordon = {
+        nome: 'Walter Gordon',
+        ruolo: 'Office Manager',
+        foto: 'walter-gordon-office-manager.jpg'
+    },
+
+    lopez = {
+        nome: 'Angela Lopez',
+        ruolo: 'Social Media Manager',
+        foto: 'angela-lopez-social-media-manager.jpg'
+    },
+
+    estrada = {
+        nome: 'Scott Estrada',
+        ruolo: 'Developer',
+        foto: 'scott-estrada-developer.jpg'
+    },
+
+    ramos = {
+        nome: 'Barbara Ramos',
+        ruolo: 'Graphic Designer',
+        foto: 'barbara-ramos-graphic-designer.jpg'
     }
 
 ];
 
 console.log('Team member 1', teamMembers[0]);
-console.log('Team member 2', pluto);
-console.log('Team member 3 solo ruolo', paperino['ruolo']);
+console.log('Team member 2', caroll);
+console.log('Team member 3 solo ruolo', gordon['ruolo']);
 console.log('ALL Team', teamMembers);
