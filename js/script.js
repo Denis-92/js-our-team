@@ -60,7 +60,6 @@ const teamMembers = [
 
 ];
 
-console.log('Team member 1', teamMembers[0]);
-console.log('Team member 2', caroll);
-console.log('Team member 3 solo ruolo', gordon['ruolo']);
-console.log('ALL Team', teamMembers);
+for (let i = 0; i < teamMembers.length; i++) {
+    console.log(teamMembers[i]);
+}
