@@ -21,19 +21,19 @@ Prima la logica in italiano e poi traduciamo in codice.
 
 // creare un array di oggetti per rappresentare i membri del team.
 const teamMembers = [
-    {
+    pippo = {
         nome: 'pippo',
         ruolo: 'ceo',
         foto: 'metti foto'
     },
 
-    {
+    pluto = {
         nome: 'pluto',
         ruolo: 'social media manager',
         foto: 'metti foto'
     },
 
-    {
+    paperino = {
         nome: 'paperino',
         ruolo: 'chief editor',
         foto: 'metti foto'
@@ -42,5 +42,6 @@ const teamMembers = [
 ];
 
 console.log('Team member 1', teamMembers[0]);
-console.log('Team member 2', teamMembers[1]);
+console.log('Team member 2', pluto);
+console.log('Team member 3 solo ruolo', paperino['ruolo']);
 console.log('ALL Team', teamMembers);
