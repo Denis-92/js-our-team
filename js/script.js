@@ -70,3 +70,17 @@ for (let i = 0; i < teamMembers.length; i++) {
     console.log(teamMembers[i]['foto']);
     console.log(' ');
 }
+
+
+// MILESTONE 2:
+// Stampare le stesse informazioni su DOM sottoforma di stringhe
+
+const selectContainer = document.getElementById('team-members');
+
+for (let i = 0; i < teamMembers.length; i++) {
+
+    let putInContainer = document.createElement('p');
+    putInContainer.innerHTML = [teamMembers[i]['nome'] + ' - ' + teamMembers[i]['ruolo'] + ' - ' + teamMembers[i]['foto']];
+    selectContainer.append(putInContainer);
+
+}
