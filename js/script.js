@@ -65,9 +65,9 @@ const teamMembers = [
 // Stampare su console le informazioni di nome, ruolo e la stringa della foto
 for (let i = 0; i < teamMembers.length; i++) {
     console.log('Team member:');
-    console.log(teamMembers[i]['nome']);
-    console.log(teamMembers[i]['ruolo']);
-    console.log(teamMembers[i]['foto']);
+    console.log(teamMembers[i].nome); //NOTA: meglio usare dot notation invece delle quadre
+    console.log(teamMembers[i].ruolo);
+    console.log(teamMembers[i].foto);
     console.log(' ');
 }
 
@@ -81,9 +81,9 @@ for (let i = 0; i < teamMembers.length; i++) {
 
     let putInContainer = document.createElement('p');
     putInContainer.innerHTML = [
-        teamMembers[i]['nome'] + ' - ' +
-        teamMembers[i]['ruolo'] + ' - <img src="img/' +
-        teamMembers[i]['foto'] + '" alt="Picture team member" >'
+        teamMembers[i].nome + ' - ' +
+        teamMembers[i].ruolo + ' - <img src="img/' + //BONUS 1: Trasformare la stringa foto in una immagine effettiva
+        teamMembers[i].foto + '" alt="Picture team member" >'
     ];
 
     selectContainer.append(putInContainer);
