@@ -79,13 +79,17 @@ const selectContainer = document.getElementById('team-members');
 
 for (let i = 0; i < teamMembers.length; i++) {
 
-    let putInContainer = document.createElement('p');
+    let putInContainer = document.createElement('div');
+    putInContainer.classList = 'team-member-card';
     putInContainer.innerHTML = [
-        teamMembers[i].nome + ' - ' +
-        teamMembers[i].ruolo + ' - <img src="img/' + //BONUS 1: Trasformare la stringa foto in una immagine effettiva
+        teamMembers[i].nome + '<p>' +
+        teamMembers[i].ruolo + '</p>' + '<img src="img/' + //BONUS 1: Trasformare la stringa foto in una immagine effettiva
         teamMembers[i].foto + '" alt="Picture team member" >'
     ];
 
     selectContainer.append(putInContainer);
 
 }
+
+// BONUS 2:
+// Organizzare i singoli membri in card/schede
