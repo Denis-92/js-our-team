@@ -80,7 +80,12 @@ const selectContainer = document.getElementById('team-members');
 for (let i = 0; i < teamMembers.length; i++) {
 
     let putInContainer = document.createElement('p');
-    putInContainer.innerHTML = [teamMembers[i]['nome'] + ' - ' + teamMembers[i]['ruolo'] + ' - ' + teamMembers[i]['foto']];
+    putInContainer.innerHTML = [
+        teamMembers[i]['nome'] + ' - ' +
+        teamMembers[i]['ruolo'] + ' - <img src="img/' +
+        teamMembers[i]['foto'] + '" alt="Picture team member" >'
+    ];
+
     selectContainer.append(putInContainer);
 
 }
