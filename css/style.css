@@ -18,4 +18,5 @@ img {
 .team-member-card {
     width: calc(100% / 3);
     padding: 5%;
+    border: 1px dashed olivedrab;
 }

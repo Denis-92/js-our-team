@@ -68,7 +68,7 @@ for (let i = 0; i < teamMembers.length; i++) {
     console.log(teamMembers[i].nome); //NOTA: meglio usare dot notation invece delle quadre
     console.log(teamMembers[i].ruolo);
     console.log(teamMembers[i].foto);
-    console.log(' ');
+    console.log('--');
 }
 
 
@@ -80,16 +80,13 @@ const selectContainer = document.getElementById('team-members');
 for (let i = 0; i < teamMembers.length; i++) {
 
     let putInContainer = document.createElement('div');
-    putInContainer.classList = 'team-member-card';
+    putInContainer.classList = 'team-member-card'; // BONUS 2: Organizzare i singoli membri in card/schede
     putInContainer.innerHTML = [
-        teamMembers[i].nome + '<p>' +
-        teamMembers[i].ruolo + '</p>' + '<img src="img/' + //BONUS 1: Trasformare la stringa foto in una immagine effettiva
-        teamMembers[i].foto + '" alt="Picture team member" >'
+        '<p>' + teamMembers[i].nome + '</p>' +
+        '<p>' + teamMembers[i].ruolo + '</p>' +
+        '<img src="img/' + teamMembers[i].foto + '" alt="Picture team member" >' //BONUS 1: Trasformare la stringa foto in una immagine effettiva
     ];
 
     selectContainer.append(putInContainer);
 
 }
-
-// BONUS 2:
-// Organizzare i singoli membri in card/schede
